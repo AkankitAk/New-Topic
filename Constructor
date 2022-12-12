@@ -1,0 +1,28 @@
+//Objct ke baad  Dot(.) use karta hai to only public non-static Member or Function ko access kr skte hai
+
+import java.util.Scanner;
+class Box{
+    int l;
+  private   int h;
+    int w;
+    Box(int l,int h,int w){
+        this.l=l;
+        this.h=h;
+        this.w=w;
+    }
+    void print(){
+        System.out.print(l+"\n"+h+"\n"+w);
+    }
+
+}
+public class Test {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int l=sc.nextInt();
+        int h=sc.nextInt();
+        int w=sc.nextInt();
+        Box b=new Box(l,h,w);
+//        System.out.println(b.h);
+        b.print();
+    }
+}
