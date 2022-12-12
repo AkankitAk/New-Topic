@@ -1,0 +1,18 @@
+// Class ke Naam ke baad dot(.) use krne se class ke public static Variable or Public static Function ko access kr skte hai
+
+import java.util.Scanner;
+
+public class Test1 {
+    static class Box{
+//     static    int height=10;
+        static void print(){
+            int i=10;
+            System.out.println(i);
+        }
+    }
+    public static void main(String[] args) {
+
+//        System.out.println(Box.height);
+        Box.print();
+    }
+}
