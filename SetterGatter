@@ -1,0 +1,39 @@
+class Product{
+    private String name;
+    private int cost;
+    private double marketValue;
+
+    // Set the value By using Satter
+    public void setName(String name){
+        this.name=name;
+    }
+    public void setCost(int cost){
+        this.cost=cost;
+    }
+    public void setMarketValue(double marketValue){
+        this.marketValue=marketValue;
+    }
+
+    //get thw Value By Gatter
+    public String getName(){
+        return this.name;
+    }
+    public int getCost(){
+        return this.cost;
+    }
+    public double getMarketValue(){
+        return this.marketValue;
+    }
+
+}
+public class SetterGatter {
+    public static void main(String[] args) {
+        Product obj=new Product();
+        obj.setName("Honey");
+        obj.setCost(100);
+        obj.setMarketValue(250.00);
+        System.out.println(obj.getName());
+        System.out.println(obj.getCost());
+        System.out.println(obj.getMarketValue());
+    }
+}
